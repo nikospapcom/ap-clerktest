@@ -18,12 +18,12 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
 
         <SignedOut>
-        <SignInButton  afterSignInUrl='/signedout' afterSignUpUrl='/signedout'/>
+        <SignInButton/>
         </SignedOut>
 
 
         <SignedIn>
-        <UserButton afterSignOutUrl='/signedout'/>
+        <UserButton />
         </SignedIn>
 
       </main>

@@ -1,10 +1,10 @@
 // page/_app.tsx
-import { ClerkProvider,RedirectToSignIn, SignedIn, SignedOut } from "@clerk/nextjs";
+import { ClerkProvider } from "@clerk/nextjs";
 import type { AppProps } from "next/app";
  
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ClerkProvider afterSignInUrl="/signedoutprovider">
+    <ClerkProvider>
       <Component {...pageProps} />
     </ClerkProvider>
   );

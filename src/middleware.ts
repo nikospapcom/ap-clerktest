@@ -1,5 +1,4 @@
 import { authMiddleware } from "@clerk/nextjs";
-import { redirectToSignIn } from '@clerk/nextjs';
 
 // This example protects all routes including api/trpc routes
 // Please edit this to allow other routes to be public as needed.
@@ -7,10 +6,8 @@ import { redirectToSignIn } from '@clerk/nextjs';
 
 export default authMiddleware({
 
-
     publicRoutes: ['/signedout','/signmein','/'],
   });
-
 
 export const config = {
   matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
