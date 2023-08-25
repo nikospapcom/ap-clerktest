@@ -25,8 +25,6 @@ export default function Home() {
 
         <SignedIn>
         <UserButton />
-        <OrganizationSwitcher />
-        <OrganizationProfile />
         </SignedIn>
       </main>
     </>
