@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import {
   UserButton,
@@ -9,6 +10,8 @@ import {
   OrganizationProfile,
   RedirectToSignIn
 } from "@clerk/nextjs";
+import Link from 'next/link';
+import { OrganizationMembership } from "@clerk/nextjs/server";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +27,10 @@ export default function Home() {
         </SignedOut>
 
         <SignedIn>
-        <UserButton />
+        <UserButton afterSwitchSessionUrl="" afterMultiSessionSingleSignOutUrl="" afterSignOutUrl=""/>
+        <OrganizationSwitcher />
+        <Link href="/org-profile">Organization Profile</Link>
+        <Link href="/create-org">Create Organization</Link>
         </SignedIn>
       </main>
     </>
