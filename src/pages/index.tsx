@@ -31,6 +31,8 @@ export default function Home() {
         <OrganizationSwitcher />
         <Link href="/org-profile">Organization Profile</Link>
         <Link href="/create-org">Create Organization</Link>
+        <Link href="/org-profile-ec">Organization Profile EC</Link>
+        <Link href="/create-org-ec">Create Organization EC</Link>
         </SignedIn>
       </main>
     </>
