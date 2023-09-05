@@ -8,7 +8,7 @@ import {
 
 export default authMiddleware({
 
-  publicRoutes: ["/signedout", "/signmein","/","/sign-up"],
+  publicRoutes: ["/signedout", "/signmein","/","/sign-up","/sign-in"],
 });
 
 export const config = {
