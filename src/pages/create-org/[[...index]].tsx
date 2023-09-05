@@ -1,5 +1,5 @@
-import { CreateOrganization } from '@clerk/nextjs'
+import { RedirectToCreateOrganization } from '@clerk/nextjs'
 
 export default function Page() {
-    return <CreateOrganization />
+    return <RedirectToCreateOrganization />
   }
